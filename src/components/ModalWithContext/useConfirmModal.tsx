@@ -27,18 +27,18 @@ const ConfirmModalProvider = ({ children }: ConfirmModalProviderProps) => {
     setOpen(true);
   };
 
-  const resetDialog = () => {
+  const closeDialog = () => {
     setOpen(false);
     setConfig({});
   };
 
   const onConfirm = () => {
-    resetDialog();
+    closeDialog();
     if(config.onConfirm) { config.onConfirm(true) };
   };
 
   const onDismiss = () => {
-    resetDialog();
+    closeDialog();
     if(config.onConfirm) { config.onConfirm(false) };
   };
 

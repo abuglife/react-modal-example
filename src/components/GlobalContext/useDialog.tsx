@@ -26,7 +26,7 @@ const DialogProvider = ({ children }: DialogProviderProps) => {
     setConfig(props);
   };
 
-  const resetDialog = () => {
+  const closeDialog = () => {
     setOpen(false);
     if(onDismiss) { onDismiss() }
   };
@@ -41,7 +41,7 @@ const DialogProvider = ({ children }: DialogProviderProps) => {
       { DialogComponent && <DialogComponent
         {...config}
         open={open}
-        onDismiss={resetDialog}
+        onDismiss={closeDialog}
         onConfirm={confirmDialog}
        /> }
       {children}
