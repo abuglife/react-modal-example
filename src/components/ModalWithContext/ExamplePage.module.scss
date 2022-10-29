@@ -1,0 +1,11 @@
+.container {
+  @apply w-full h-full min-h-screen flex flex-col items-center justify-center p-8;
+}
+
+.heading {
+  @apply text-2xl text-gray-700 mb-8;
+}
+
+.button {
+  @apply w-60 bg-indigo-500 text-white shadow-lg #{!important};
+}

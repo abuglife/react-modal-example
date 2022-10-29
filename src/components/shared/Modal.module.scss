@@ -1,0 +1,7 @@
+.btnConfirm {
+  @apply  bg-indigo-500 text-white shadow-lg #{!important};
+}
+
+.btnCancel {
+  @apply text-indigo-500 #{!important};
+}

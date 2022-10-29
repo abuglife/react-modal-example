@@ -1,5 +1,5 @@
 import React from 'react';
-import ExamplePage from '../components/SimpleModal/ExamplePage';
+import ExamplePage from '../components/ModalWithContext/ExamplePage';
 
 const ModalWithContextPage = () => {
   return <ExamplePage></ExamplePage>

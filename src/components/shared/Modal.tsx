@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Button, Dialog, Slide, SlideProps } from '@mui/material';
 import styles from "./Modal.module.scss";
-import { DialogBody, DialogFooter, DialogHeader } from '../Dialog';
+import { DialogBody, DialogFooter, DialogHeader } from './Dialog';
 
 export interface ModalProps {
   open: boolean,
@@ -25,7 +25,7 @@ const Modal = ({ open, title, message, onConfirm, onDismiss }: ModalProps) => {
       <div className={styles.message}>{message}</div>
     </DialogBody>
     <DialogFooter>
-      <Button variant="text" color="secondary" className={styles.btnCancel} onClick={() => {
+      <Button variant="text" color="primary" className={styles.btnCancel} onClick={() => {
         if (onDismiss) { onDismiss() }
       }}>Cancel</Button>
       <Button variant="contained" color="primary" className={styles.btnConfirm} onClick={() => {

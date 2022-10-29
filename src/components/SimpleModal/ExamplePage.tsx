@@ -1,7 +1,7 @@
 import { Button } from '@mui/material';
 import React, { useState } from 'react';
 import styles from './ExamplePage.module.scss';
-import Modal from "./Modal";
+import Modal from "../shared/Modal";
 
 const ExamplePage = () => {
   const [open, setOpen] = useState(false)
