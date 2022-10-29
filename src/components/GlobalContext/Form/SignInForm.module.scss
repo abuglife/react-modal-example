@@ -1,0 +1,15 @@
+.body {
+  @apply mb-3;
+}
+
+.linkContainer {
+  @apply flex items-center justify-between mb-6 py-0;
+}
+
+.link {
+  @apply text-sm text-gray-700 cursor-pointer opacity-50;
+
+  &:hover {
+    @apply opacity-100 underline;
+  }
+}

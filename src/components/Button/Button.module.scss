@@ -1,0 +1,12 @@
+.btn {
+  @apply cursor-pointer shadow rounded bg-transparent px-8 text-indigo-500 #{!important};
+  height: var(--button-height);
+}
+
+.btnPrimary {
+  @apply bg-indigo-500 border-0 border-b border-solid border-indigo-500 text-white #{!important};
+
+  &:hover {
+    @apply bg-indigo-600 #{!important};
+  }
+}

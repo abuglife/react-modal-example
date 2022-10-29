@@ -1,0 +1,55 @@
+.container {
+  @apply mb-4;
+}
+
+.label {
+  @apply font-medium mb-2 text-gray-600;
+}
+
+.inputContainer {
+  @apply relative bg-white rounded-lg border border-solid border-gray-200 flex items-center p-0;
+  height: 40px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.03) 0 2px 0px 0  inset;
+  
+  &.isError {
+    @apply border border-solid border-red-400;
+  }
+
+  &.isFocus {
+    @apply shadow-lg; 
+  }
+}
+
+.input {
+  @apply font-normal shadow-none text-gray-700 border-0 px-5 py-0 w-full h-full rounded-lg;
+  height: 40px;
+
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder {
+    @apply text-gray-400;
+  }
+}
+
+.icon {
+  @apply pl-3 text-2xl text-gray-500 flex items-center justify-center h-full;
+}
+
+.loadingContainer {
+  @apply mb-3;
+}
+
+.loadingLabel {
+  @apply h-5 rounded w-40 bg-gray-100 mb-2 opacity-25;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.loadingInput {
+  @apply h-12 rounded w-full bg-gray-100 relative opacity-25;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.hint {
+  @apply text-sm text-red-700 mt-1;
+}
