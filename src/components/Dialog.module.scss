@@ -1,0 +1,23 @@
+.heading {
+  @apply flex items-center border-0 border-b border-solid border-gray-200;
+}
+
+.body {
+  @apply px-5 py-5;
+}
+
+.title {
+  @apply flex-grow px-5 py-3 text-lg font-semibold text-gray-700;
+}
+
+.footer {
+  @apply bg-gray-100 p-3 flex items-end justify-end gap-3 rounded-b-lg;
+}
+
+.btnClose {
+  @apply bg-white border-0 text-2xl px-3 flex items-center py-3;
+
+  &:hover {
+    @apply cursor-pointer;
+  }
+}
